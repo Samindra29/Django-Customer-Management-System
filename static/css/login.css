@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Muli:wght@400;700&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Muli', sans-serif;
+    /* background-color: rgb(141, 4, 68); */
+    background: rgb(146, 136, 194);
+    color: white;
+    display: flex; 
+    flex-direction: column;      
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden; 
+    margin: 0;
+}
+
+.container{
+    background-color: rgba(20, 13, 110, 0.4);
+    padding: 20px 40px;
+    border-radius: 5px;
+}
+
+.container h1{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.container a{
+    cursor: pointer;
+    text-decoration: none;
+    color: rgb(248, 201, 228);
+}
+.container a:active{
+    color: rgb(27, 0, 145) ;
+}
+
+.form-control{
+    position: relative;
+    margin: 20px 0 40px;
+    width: 300px;
+}
+
+.form-control input{
+    cursor: pointer;
+    background-color: transparent;
+    border: 0;
+    border-bottom: 2px white solid;
+    display: block;
+    width: 100%;
+    padding: 15px 0px;
+    font-size: 18px;
+    color: white;
+}
+
+
+.form-control input:focus, 
+.form-control input:valid{
+    outline: 0;
+    /* when focused change line color */
+    border-bottom-color: rgb(1, 16, 145) ;  
+}
+
+
+.btn{
+    cursor: pointer;
+    display: inline-block;
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(102, 95, 206);
+    color: white;
+    border: 0;
+    border-radius: 20px;
+    font-family: inherit;
+    font-size: 16px;
+}
+
+.btn:focus{
+    outline: 0;
+}
+
+.btn:active{
+    transform: scale(0.90);
+}
+
+/* text below the button */
+.text{
+    margin-top: 30px;
+}
+
+.form-control label{
+    position: absolute;
+    top: 15px;
+    left: 0;
+}
+
+.form-control label span{
+    display: inline-block;
+    font-size: 18px;
+    min-width: 5px;
+    /* to make transition smooth and cubic-bazier for the bounce-like effect */
+    transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);  
+}
+
+.form-control input:focus + label span,
+.form-control input:valid + label span{
+    color: rgb(55, 0, 255) ;
+    transform: translateY(-30px);
+    
+}
