@@ -1,5 +1,5 @@
 # Django-Customer-Management-System
-## an API to manage customers and orders on any e-commerce platforms
+## an API to manage customers and orders on any e-commerce platform
 ### *Django | Python | HTML5 | CSS*
 
 ## Features: 
